@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
     <link rel="stylesheet" href="styles/styles.css">
-
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
   </head>
 
   <body>
@@ -222,7 +222,14 @@
           <form class="search-form" action="https://echo.htmlacademy.ru/" method="post">
             <div class="search-form__header">
               <h2 class="search-form__title"> Поиск гостиницы в Седоне</h2>
-              <button class="search-form__close" type="button" aria-label="Закрыть форму">×</button>
+              <button class="search-form__close" type="button" aria-label="Закрыть форму">
+                <svg class="search-form__close-svg" width="14" height="14" viewBox="0 0 14 14" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M14 1.29231L12.7077 0L7 5.70769L1.29231 0L0 1.29231L5.70769 7L0 12.7077L1.29231 14L7 8.29231L12.7077 14L14 12.7077L8.29231 7L14 1.29231Z"
+                    fill="currentColor" />
+                </svg>
+              </button>
             </div>
 
             <div class="search-form__field">
@@ -248,9 +255,21 @@
                 <div class="search-form__guest-group">
                   <label class="search-form__label" for="adults">Взрослые:</label>
                   <div class="counter">
-                    <button class="counter__button" type="button" aria-label="Уменьшить количество взрослых">−</button>
-                    <input class="counter__input" type="number" id="adults" name="adults" value="2" min="0" readonly>
-                    <button class="counter__button" type="button" aria-label="Увеличить количество взрослых">+</button>
+                    <button class="counter__button" type="button">
+                      <svg class="counter__button-svg" width="20" height="20" viewBox="0 0 20 20" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path d="M3 9V11H17V9H3Z" fill="currentColor" />
+                      </svg>
+                      <span class="visually-hidden">Уменьшить количество взрослых</span>
+                    </button>
+                    <input class="counter__input" type="number" id="adults" name="adults" value="2" min="0">
+                    <button class="counter__button" type="button">
+                      <svg class="counter__button-svg" width="20" height="20" viewBox="0 0 20 20" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path d="M17 9H11V3H9V9H3V11H9V17H11V11H17V9Z" fill="currentColor" />
+                      </svg>
+                      <span class="visually-hidden">Увеличить количество взрослых</span>
+                    </button>
                   </div>
                 </div>
 
@@ -267,21 +286,29 @@
                   </div>
 
                   <div class="counter">
-                    <button class="counter__button" type="button" aria-label="Уменьшить количество детей">−</button>
-                    <input class="counter__input" type="number" id="children" name="children" value="2" min="0"
-                      readonly>
-                    <button class="counter__button" type="button" aria-label="Увеличить количество детей">+</button>
+                    <button class="counter__button" type="button">
+                      <svg class="counter__button-svg" width="20" height="20" viewBox="0 0 20 20" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path d="M3 9V11H17V9H3Z" fill="currentColor" />
+                      </svg>
+                      <span class="visually-hidden">Уменьшить количество взрослых</span>
+                    </button>
+                    <input class="counter__input" type="number" id="children" name="children" value="2" min="0">
+                    <button class="counter__button" type="button">
+                      <svg class="counter__button-svg" width="20" height="20" viewBox="0 0 20 20" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path d="M17 9H11V3H9V9H3V11H9V17H11V11H17V9Z" fill="currentColor" />
+                      </svg>
+                      <span class="visually-hidden">Увеличить количество взрослых</span>
+                    </button>
                   </div>
                 </div>
               </div>
             </div>
-
-            <button class="search-form__submit" type="submit" required>Найти</button>
+            <button class="search-form__submit" type="submit">Найти</button>
           </form>
-
         </section>
       </div>
-    </div>
     </div>
     <script src="./scripts/script.js"></script>
   </body>
